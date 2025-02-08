@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        datetime_macro: datetime_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "DATETIME_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
