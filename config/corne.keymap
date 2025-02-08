@@ -11,10 +11,26 @@
 / {
     macros {
         datetime_macro: datetime_macro {
+            label = "DATETIME_MACRO";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Q>;
-            label = "DATETIME_MACRO";
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings
+                = <&kp LBKT>
+                = <&macro_tap_time YYYY>
+                = <&kp MINUS>
+                = <&macro_tap_time MM>
+                = <&kp MINUS>
+                = <&macro_tap_time DD>
+                = <&kp SPACE>
+                = <&macro_tap_time HH>
+                = <&kp COLON>
+                = <&macro_tap_time mm>
+                = <&kp COLON>
+                = <&macro_tap_time ss>
+                = <&kp RBKT>
+                = <&kp SPACE>;
         };
     };
 
