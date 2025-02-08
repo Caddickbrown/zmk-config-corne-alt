@@ -13,7 +13,7 @@
         datetime_macro: datetime_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp Q>;
             label = "DATETIME_MACRO";
         };
     };
