@@ -16,21 +16,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <5>;
-            bindings
-                = <&kp LBKT>
-                = <&macro_tap_time YYYY>
-                = <&kp MINUS>
-                = <&macro_tap_time MM>
-                = <&kp MINUS>
-                = <&macro_tap_time DD>
-                = <&kp SPACE>
-                = <&macro_tap_time HH>
-                = <&kp COLON>
-                = <&macro_tap_time mm>
-                = <&kp COLON>
-                = <&macro_tap_time ss>
-                = <&kp RBKT>
-                = <&kp SPACE>;
+            bindings = <&kp SPACE>;
         };
     };
 
@@ -84,10 +70,10 @@
 
         double_layer {
             bindings = <
-&trans          &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans    &trans  &datetime_macro  &trans  &trans  &trans  &trans
+&bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans           &trans
             >;
         };
     };
